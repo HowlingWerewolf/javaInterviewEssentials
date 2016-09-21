@@ -33,4 +33,20 @@ public class Vehicle {
 	public void setNumberOfWheels(int numberOfWheels) {
 		this.numberOfWheels = numberOfWheels;
 	}
+	
+	public void publicMethod(){
+		
+	}
+	
+	private void privateMethod(){	
+		
+	}
+	
+	protected void protectedMethod(){
+		
+	}
+	
+	void packageProtectedMethod(){
+		
+	}
 }
