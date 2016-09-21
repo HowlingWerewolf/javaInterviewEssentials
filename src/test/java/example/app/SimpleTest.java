@@ -84,5 +84,24 @@ public class SimpleTest {
 //		s3 = s1 & s2; // does not compile
 //		s3 = s1 && s2; // does not compile
 	}
+	
+	@Test
+	public void testNumberConversion() {
+		Integer ten = new Integer(10);
+		Long nine = new Long(9);
+		System.out.println(ten + nine);
+		int i = 1;
+		System.out.println(i + ten);
+	}
+	
+	@Test
+	public void testStringArrays() {
+		String stringArray [] = {"a", "b", "c"};
+		for (int i = 0; i < stringArray.length; i++) {
+			String string = stringArray[i];
+			System.out.println(stringArray[i]);
+			
+		}
+	}
 
 }
