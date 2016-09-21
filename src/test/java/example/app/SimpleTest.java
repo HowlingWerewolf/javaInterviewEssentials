@@ -98,9 +98,7 @@ public class SimpleTest {
 	public void testStringArrays() {
 		String stringArray [] = {"a", "b", "c"};
 		for (int i = 0; i < stringArray.length; i++) {
-			String string = stringArray[i];
-			System.out.println(stringArray[i]);
-			
+			System.out.println(stringArray[i]);			
 		}
 	}
 
