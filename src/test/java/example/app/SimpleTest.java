@@ -67,7 +67,10 @@ public class SimpleTest {
 		String s2 = new String("test"); // this create unnecessary new object
 
 		assertEquals(true, s1.equals(s2)); // true, the objects referenced are equal
-		assertEquals(true, s1.hashCode() == s2.hashCode());		
+		assertEquals(true, s1.hashCode() == s2.hashCode()); // equals true, so hashcode is true also
+		
+		// reverse: same hashcode, but the equals can be false
+		// assume we return 1 for hashcode always. Then "foo" and "bar" will have false equals result!
 	}
 	
 	@Test
